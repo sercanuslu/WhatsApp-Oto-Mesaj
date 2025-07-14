@@ -26,3 +26,31 @@ cd whatsapp-oto-mesaj
 python -m venv venv && source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python main.pyw
+```
+
+## ⚙️ Yapılandırma
+Uygulamayı ilk çalıştırdığında settings.json dosyası oluşur.
+Örnek alanlar: 
+
+Alan	Açıklama
+message	Gönderilecek otomatik mesaj metni
+start_time	HH:MM formatında başlama saati
+end_time	HH:MM formatında bitiş saati
+interval	Kontrol sıklığı (dakika)
+excluded_contacts	Yanıt atlanacak kişi isimleri (liste)
+
+##  🖥️ Çalıştırma
+Uygulamayı başlat → mesaj metnini, saatleri ve periyodu ayarla → Otomasyonu Başlat.
+
+Pencereyi kapatsan bile sistem tepsisindeki simge üzerinden erişebilirsin.
+
+Otomatik yanıtın çalışması için bilgisayarını ve uygulamayı kapatmamalısın.
+
+## ❓ Sorun Giderme
+“Mesaj kutusu bulunamadı” hatası alırsan Edge profil klasörünü (edge_profile) silip tekrar dene.
+
+QR kod ekrandan kalkmıyorsa WhatsApp Web’e manuel giriş yapıp uygulamayı yeniden başlat.
+
+## 🤝 Katkıda Bulun
+Pull request’ler ve issue’lar memnuniyetle karşılanır.
+Geliştirici kılavuzu için developers.md dosyasına göz at.
